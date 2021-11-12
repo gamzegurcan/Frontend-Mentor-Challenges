@@ -68,10 +68,6 @@ h1 span {
     background-color:hsl(212, 86%, 64%);
 }
 
-.box-push {
-    transform:translateY(50%);
-}
-
 .box h2 {
     margin:0;
 }
@@ -79,6 +75,10 @@ h1 span {
 .box p {
     font-size:14px;
     margin:15px 0 30px;
+}
+
+.box-push {
+	transform: translateY(50%);
 }
 
 .box img {
@@ -92,4 +92,10 @@ p {
 
 footer {
     text-align: center;
+}
+
+@media (max-width:775px) {
+    .box-push {
+        transform: translateY(0);
+    }
 }
